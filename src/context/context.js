@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {createContext, useState} from 'react';
+import spanish from '../spain.json'
+export const PortfolioContext = createContext();
 
-const PortfolioContext = React.createContext();
-
-export const PortfolioProvider = PortfolioContext.Provider;
-export const PortfolioConsumer = PortfolioContext.Consumer;
-
-export default PortfolioContext;
+export const PortfolioProvider= ({children})=> {
+    const [data, setData] = useState(spanish);
+    return (
+        <PortfolioContext.Provider value={{
+            data,
+            setData
+        }} >
+        {children}
+        </PortfolioContext.Provider>
+    )
+}

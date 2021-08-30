@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$basecolor:#ece4d9;
 .App {
   text-align: center;
 }
@@ -40,9 +41,9 @@
 .App-particles__container {
   overflow: hidden;
   position: absolute;
-  top: 64px;
+  top: 9%;
   left: 0px;
-  bottom: 414px;
+  bottom: 71%;
   right: 0px;
   z-index: 0;
 }
@@ -51,4 +52,46 @@
   z-index: 0;
   width: 91%;
   height: 44%;
+}
+
+#name{
+  font-family: monospace;
+    text-transform: inherit;
+    display: block;
+    font-size: 41px;
+    color: #ffffff;
+    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+    letter-spacing: -4px;
+    text-align: center;
+    padding: 47px 14px;
+}
+.intro-container{
+  background-color: #ece4d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  z-index: 4;
+}
+body{
+  background-color: $basecolor;
+}
+.title-container{
+  font-family: 'Bebas Neue', cursive;
+  color: dimgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 550px) {
+  #pc-image {
+    display: none;
+  }
+}
+.contact-form{
+  border-radius: 19px;
+background: #ece4d9;
+box-shadow:  28px 28px 55px #dbd4ca,
+             -28px -28px 55px #fdf4e8;
 }

@@ -1,7 +1,11 @@
-import React from 'react'
-import { Navbar, Nav, Container} from 'react-bootstrap'
+import React, { useContext } from 'react'
+import { Navbar, Nav, Container, ButtonGroup, Button} from 'react-bootstrap'
+import { PortfolioContext } from '../context/context'
 import puzzle from '../img/puzzle.png'
+import spanish from '../spain.json'
+import english from '../english.json'
 export default function NavB() {
+  const {data, setData} = useContext(PortfolioContext)
     return (
         <div>
               <Navbar bg="light" expand="lg" variant="light">
@@ -11,11 +15,15 @@ export default function NavB() {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Sobre mí</Nav.Link>
-      <Nav.Link href="#features">Proyectos & Skills</Nav.Link>
-      <Nav.Link href="#pricing">Contacto</Nav.Link>
+      <Nav.Link href="#home">{data.nav[0]}</Nav.Link>
+      <Nav.Link href="#features">{data.nav[1]}</Nav.Link>
+      <Nav.Link href="#pricing">{data.nav[2]}</Nav.Link>
     </Nav>
-    </Navbar.Collapse>
+    
+    <ButtonGroup size="sm" aria-label="Basic example">
+  <Button onClick={()=>setData(spanish)}className='btn-spain' variant='outline-dark'>ES</Button>
+  <Button onClick={()=>setData(english)} variant='outline-dark'>EN</Button>
+</ButtonGroup></Navbar.Collapse>
     </Container>
   </Navbar>
         </div>

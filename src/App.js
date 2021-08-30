@@ -3,13 +3,21 @@ import './styles/App.scss'
 import { PortfolioProvider } from './context/context';
 import Home from './components/Home';
 import NavB from './components/Nav'
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 function App() {
-  const [home, setHome] = useState({});
+  const [data, setData] = useState({});
   return (
-    <PortfolioProvider value={{ home }}>
+    <div className="App">
+    <PortfolioProvider>
     <NavB />
      <Home/>
+     <About/>
+     <Projects/>
+     <Contact/>
     </PortfolioProvider>
+    </div>
   );
 }
 
