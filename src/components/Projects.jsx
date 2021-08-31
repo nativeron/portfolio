@@ -6,7 +6,7 @@ export default function Projects() {
     const {data} = useContext(PortfolioContext)
     return (
         <div>
-        <div className='title-container'> 
+        <div id="work" className='title-container'> 
             <img src={folder} alt='folder' width='10%'/>
             <h2>{data.nav[1]}</h2>
             

@@ -8,7 +8,7 @@ export default function About() {
     const {data} = useContext(PortfolioContext)
     return (
     <div>
- <div className='title-container'>
+ <div id="about" className='title-container'>
             <h2>{data.nav[0]}</h2>
             
         </div>
@@ -16,9 +16,10 @@ export default function About() {
         </div>
         <div>
         <h5>Skills</h5>
+        <div className='skills-container'>
         <img src={js} alt='plant' width='15%'/>
-
-        <p align="left"> 
+        <div>
+        <p > 
         <a href="https://getbootstrap.com" target="_blank"> 
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> 
         <a href="https://www.w3schools.com/css/" target="_blank">
@@ -33,7 +34,7 @@ export default function About() {
                   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
                   <a href="https://nodejs.org" target="_blank"> 
                   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> 
-                  <a href="https://www.postgresql.org" target="_blank"> 
+                  </p><p><a href="https://www.postgresql.org" target="_blank"> 
                   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> 
                   <a href="https://postman.com" target="_blank"> 
                   <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> 
@@ -44,7 +45,7 @@ export default function About() {
                   <a href="https://sass-lang.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> </p>
 
             learning
-            <p align="left"> <a href="https://www.djangoproject.com/" target="_blank"> 
+            <p> <a href="https://www.djangoproject.com/" target="_blank"> 
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="django" width="40" height="40"/> </a> 
             <a href="https://flask.palletsprojects.com/" target="_blank"> 
             <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> 
@@ -53,6 +54,9 @@ export default function About() {
             <a href="https://www.python.org" target="_blank"> 
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
            </p>
+           </div>
+
+        </div>
         </div>
     </div>
        

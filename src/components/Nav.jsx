@@ -15,9 +15,9 @@ export default function NavB() {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#home">{data.nav[0]}</Nav.Link>
-      <Nav.Link href="#features">{data.nav[1]}</Nav.Link>
-      <Nav.Link href="#pricing">{data.nav[2]}</Nav.Link>
+      <Nav.Link href="#about">{data.nav[0]}</Nav.Link>
+      <Nav.Link href="#work">{data.nav[1]}</Nav.Link>
+      <Nav.Link href="#contact">{data.nav[2]}</Nav.Link>
     </Nav>
     
     <ButtonGroup size="sm" aria-label="Basic example">
