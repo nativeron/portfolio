@@ -1,5 +1,9 @@
 {
     "nav":[
         "Sobre mí", "Proyectos", "Contacto"
+    ],
+    "contact":[
+        "¿Seguimos en contacto?", "Tu nombre", "Tu mensaje", "Tu mail", "enviar",
+        "Gracias! Apenas vea el mensaje, nos ponemos en contacto :)","Ups, parece que algo salió mal. Por favor, intenta mandarlo de nuevo sino escribime a mi mail nataliaveronduarte@gmail.com"
     ]
 }

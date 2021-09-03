@@ -1,5 +1,9 @@
 {
     "nav":[
         "About me", "Projects", "Contact"
+    ],
+    "contact":[
+        "Get in touch", "Your name", "Yout message", "Your email", "send",
+        "Thanks! As soon as I see the message, we will get in touch :)","Oops, looks like something went wrong. Please, try to send it again if not write to my email nataliaveronduarte@gmail.com"
     ]
 }
