@@ -17,7 +17,7 @@ export default function About() {
         <div>
         <h5>Skills</h5>
         <div className='skills-container'>
-        <img src={js} alt='plant' width='15%'/>
+        <img src={js} alt='plant' id='npm'/>
         <div>
         <p > 
                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> 
@@ -44,6 +44,7 @@ export default function About() {
 
         </div>
         </div>
+
     </div>
        
     )
