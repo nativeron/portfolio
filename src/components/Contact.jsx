@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { PortfolioContext } from '../context/context'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from 'react-icons/ai';
 import axios from 'axios';
 export default function Contact() {
     const {data} = useContext(PortfolioContext)
@@ -82,6 +82,7 @@ export default function Contact() {
             </div>
             </div>
             </div>
+            <button id="arrow"><a href='#nav'><AiOutlineArrowUp/></a> </button>
         </div>
     )
 }

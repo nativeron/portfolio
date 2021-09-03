@@ -8,7 +8,7 @@ export default function NavB() {
   const {data, setData} = useContext(PortfolioContext)
     return (
         <div>
-              <Navbar bg="light" expand="lg" variant="light">
+              <Navbar id='nav' bg="light" expand="lg" variant="light">
     <Container>
     <img style={{width:'30px', marginRight:'10px'}} src={puzzle} alt='logo'/>
     <Navbar.Brand href="#home">Natalia Verón</Navbar.Brand>

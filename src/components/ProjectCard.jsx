@@ -1,14 +1,11 @@
 import React from 'react'
-import prueba from '../img/weather.png'
 export default function ProjectCard({name,img,description,link}) {
     return (
-        <div style={{width:'30%'}}>
-            <img src={img} width='100%'/>
-            <div style={{backgroundColor:'white'}}>
+        <div className='card1'>
+            <img style={{'borderRadius':'20px 20px 0px 0px'}} src={img} width='100%'/>
               <h6>{name}</h6>
             <p>{description}</p>
-            <a style={{cursor:'pointer'}}><p>{link}</p></a>  
-            </div>
+            <a style={{cursor:'pointer'}} href={link}><p>ver</p></a>  
             
         </div>
     )
