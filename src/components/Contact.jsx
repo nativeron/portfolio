@@ -43,7 +43,7 @@ export default function Contact() {
     return(
         <div>
             <div id="contact" className='title-container'>
-                <h2 style={{zIndex:1}}>{data.contact[0]}</h2>
+                <h2 style={{zIndex:1, marginTop:'4%'}}>{data.contact[0]}</h2>
             </div>
             <div className="contact-container">
                 {

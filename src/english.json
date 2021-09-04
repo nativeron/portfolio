@@ -5,5 +5,24 @@
     "contact":[
         "Get in touch", "Your name", "Yout message", "Your email", "send",
         "Thanks! As soon as I see the message, we will get in touch :)","Oops, looks like something went wrong. Please, try to send it again if not write to my email nataliaveronduarte@gmail.com"
-    ]
+    ],
+    "projects":[{
+        "name":"Marketplace Gamer",
+        "link":"https://www.youtube.com/watch?v=AuHNVFE97YE",
+        "img":"https://i.imgur.com/B2S48OV.png",
+        "description":"dsfd"
+    },
+    {
+        "name":"World's countries",
+        "link":"https://www.linkedin.com/posts/natalia-veron_hola-les-comparto-mi-proyecto-individual-activity-6815732347489554432-NA79",
+        "img":"https://i.imgur.com/YMWmMKH.png",
+        "description":"dfsdf"
+    },
+    {
+        "name":"Wheater app",
+        "link":"https://weatherapp-drab-omega.vercel.app/",
+        "img":"https://i.imgur.com/DeLHKoR.png",
+        "description":"Search app for cities around the world, showing the weather in real time"
+    }
+]
 }
