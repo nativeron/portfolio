@@ -6,9 +6,6 @@ import pc from '../img/pc.png'
 export default function Home() {
     return (
         <>
-        <div style={{backgroundColor:'red'}}>
-            <Particle params={particlesConfig} className="App-particles__container" />
-        </div>
             
         <div className="">
           <div className="intro-container">
