@@ -1,10 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
 $basecolor:#dbd4ca;
 $green:#43b69c;
+@mixin card {
+  background: #00000012;
+  box-shadow: 1px 7px 13px 1px $basecolor;
+  &:hover{
+  box-shadow: -2px 1px 10px 0px $green
+}
+}
 .App {
   text-align: center;
 }
@@ -68,7 +73,6 @@ h2{
   display: block;
   font-size: 41px;
   color: #000000;
-  /* text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff; */
   letter-spacing: -4px;
   text-align: center;
   padding: 47px 14px;
@@ -87,9 +91,6 @@ h2{
 }
 .navbar {
   z-index: 4;
-}
-body{
- /*  background-color: $basecolor; */
 }
 .title-container{
   font-family: 'Bebas Neue';
@@ -112,7 +113,6 @@ body{
 .tech{
   background-color: #43b69c;
   color: #fffefd;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 4%;
   height: 1.8em;
@@ -131,14 +131,13 @@ body{
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.card1:hover .image {
+.card1:hover {
+  .image {
   opacity: 0.3;
-}
-
-.card1:hover .middle {
+}.middle {
   opacity: 1;
 }
-
+}
 .text {
   background-color: #00000054;
   color: white;
@@ -147,57 +146,21 @@ body{
   display: flex;
   height: 168px;
   align-items: center;
-  /* justify-content: space-around; */
   flex-direction: column;
   flex-wrap: wrap;
-
 }
 #npm{
   width: 22%;
 }
-@media (max-width: 650px) {
-  #pc-image {
-    display: none;
-  }
-  .contact-container{
-    flex-direction: column;
-  }
-  .contact-form{
-    margin-bottom: 5%;
-  }
-  .title-container img {
-      width: 7rem;
-  }
-  .card-container{
-    flex-direction: column;
-    align-items: center;
-  }
-  .card1{
-    width: 80%;
-  }
-  .skills-container{
-    flex-direction: column;
-  }
-  #npm{
-    width: 40%;
-  }
-  .description{
-    min-height: fit-content;
-  }
-}
 .contact-form{
   border-radius: 19px;
-  background: #00000012;
   padding: 30px;
   display: flex;
   width: 21rem;
-  box-shadow: 1px 7px 13px 1px $basecolor, -2px 1px 55px #fdf4e8;
   flex-direction: column;
   align-items: center;
   z-index: 3;
-  &:hover{
-  box-shadow: -2px 1px 10px 0px $green, -28px -28px 55px #fdf4e8;
-}
+  @include card();
 }
 button{
   background-color:$green;
@@ -216,7 +179,6 @@ a{
   :hover{
     color: $green;
   }
-  
 }
 input, textarea{
   margin: 3px;
@@ -308,21 +270,8 @@ div:nth-child(2) {
 }
 .card1{
   margin: 1%;
-  box-shadow: 1px 7px 13px 1px $basecolor, -2px 1px 55px #fdf4e8;
-  background: #00000012;
   border-radius: 20px;
-  &:hover{
-    box-shadow: -2px 1px 10px 0px $green,
-  }
-  img{
-    transition: 0.4s ease-out;
-    &:hover{
-      color: black;
-      transition: 0.4s ease-out;
-      
-    }
-  }
-  
+  @include card();
 }
 h6{
   color: #43b69c;
@@ -339,4 +288,34 @@ h6{
   width: 100%;
   height: 229px !important;
   pointer-events: initial;
+}
+@media (max-width: 650px) {
+  #pc-image {
+    display: none;
+  }
+  .contact-container{
+    flex-direction: column;
+  }
+  .contact-form{
+    margin-bottom: 5%;
+  }
+  .title-container img {
+      width: 7rem;
+  }
+  .card-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card1{
+    width: 80%;
+  }
+  .skills-container{
+    flex-direction: column;
+  }
+  #npm{
+    width: 40%;
+  }
+  .description{
+    min-height: fit-content;
+  }
 }
