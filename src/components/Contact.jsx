@@ -4,6 +4,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from 'react-icons/ai';
 import axios from 'axios';
 import Particles from 'react-particles-js';
 import particlesConfig from '../particlesjs-config.json'
+import img from '../img/planet.png'
 export default function Contact() {
     const {data} = useContext(PortfolioContext)
     const [success, setSuccess] = useState(false)
@@ -46,6 +47,7 @@ export default function Contact() {
         <div>
             <div id="contact" className='title-container'>
                 <h2 style={{zIndex:4, marginTop:'4%'}}>{data.contact[0]}</h2>
+               
             </div>
             <div className="contact-container">
             <Particles params={particlesConfig} className="App-particles__container" />
@@ -76,7 +78,7 @@ export default function Contact() {
                    <p onClick={(e)=>handleClickError(e)} style={{textDecoration:'underline', cursor:'pointer'}} >try again</p>
                    </div>
                 }            
-            <div style={{zIndex:1}}>
+            <div style={{zIndex:1}}> 
             <p>nataliaveronduarte@gmail.com</p>
             <div>
                 <a href="https://www.github.com/nativeron" target="_blank" style={{marginRight:'10px'}}><AiFillGithub className='icon' /></a>

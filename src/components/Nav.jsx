@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { Navbar, Nav, Container, ButtonGroup, Button} from 'react-bootstrap'
 import { PortfolioContext } from '../context/context'
-import puzzle from '../img/puzzle.png'
 import spanish from '../spain.json'
 import english from '../english.json'
 export default function NavB() {
@@ -10,7 +9,6 @@ export default function NavB() {
         <div>
               <Navbar id='nav' bg="light" expand="lg" variant="light">
     <Container>
-    <img style={{width:'30px', marginRight:'10px'}} src={puzzle} alt='logo'/>
     <Navbar.Brand href="#home">Natalia Verón</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">

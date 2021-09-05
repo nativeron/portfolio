@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 $basecolor:#dbd4ca;
 $green:#43b69c;
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $green;    /* color of the scroll thumb */
+}
 @mixin card {
   background: #00000012;
   box-shadow: 1px 7px 13px 1px $basecolor;
@@ -141,7 +147,7 @@ h2{
 .text {
   background-color: #00000054;
   color: white;
-  font-size: 16px;
+  font-size: 13px;
   padding: 16px 32px;
   display: flex;
   height: 168px;
@@ -176,9 +182,15 @@ button{
 }
 a{
   color: #000000;
+  text-decoration: none;
   :hover{
     color: $green;
   }
+}
+.skills{
+  background: #00000008;
+  border-radius: 20px;
+  padding: 9px ;
 }
 input, textarea{
   margin: 3px;
@@ -194,11 +206,15 @@ input, textarea{
   align-items: center;
   justify-content: space-around;
   min-height: 21rem;
+ 
 }
 .skills-container{
   display: flex;
     align-items: center;
     justify-content: space-evenly;
+  img{
+    margin-left: 2%;
+  }
 }
 .footer{
   background-color: $green;
