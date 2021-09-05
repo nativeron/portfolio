@@ -10,19 +10,22 @@
         "name":"Marketplace Gamer",
         "link":"https://www.youtube.com/watch?v=AuHNVFE97YE",
         "img":"https://i.imgur.com/B2S48OV.png",
-        "description":"dsfd"
+        "description":"dsfd",
+        "pag":"video"
     },
     {
         "name":"World's countries",
         "link":"https://www.linkedin.com/posts/natalia-veron_hola-les-comparto-mi-proyecto-individual-activity-6815732347489554432-NA79",
         "img":"https://i.imgur.com/YMWmMKH.png",
-        "description":"dfsdf"
+        "description":"dfsdf",
+        "pag":"video"
     },
     {
         "name":"Wheater app",
         "link":"https://weatherapp-drab-omega.vercel.app/",
         "img":"https://i.imgur.com/DeLHKoR.png",
-        "description":"Search app for cities around the world, showing the weather in real time"
+        "description":"Search app for cities around the world, showing the weather in real time",
+        "pag":"web"
     }
 ]
 }

@@ -15,7 +15,7 @@ export default function Projects() {
                 data.projects.map((x)=>{
                     console.log(x.img)
                     return (
-                    <ProjectCard name={x.name} description={x.description} img={x.img} link={x.link}/>)
+                    <ProjectCard name={x.name} description={x.description} img={x.img} link={x.link} pag={x.pag}/>)
             })
         }
 
