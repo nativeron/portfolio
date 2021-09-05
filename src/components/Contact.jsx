@@ -48,6 +48,7 @@ export default function Contact() {
                 <h2 style={{zIndex:4, marginTop:'4%'}}>{data.contact[0]}</h2>
             </div>
             <div className="contact-container">
+            <Particles params={particlesConfig} className="App-particles__container" />
                 {
                     !success && !error && !loading &&
                 <form className='gform contact-form' data-email='nataliaveronduarte@gmail.com'
@@ -76,7 +77,6 @@ export default function Contact() {
                    </div>
                 }            
             <div style={{zIndex:1}}>
-            <Particles params={particlesConfig} className="App-particles__container" />
             <p>nataliaveronduarte@gmail.com</p>
             <div>
                 <a href="https://www.github.com/nativeron" target="_blank" style={{marginRight:'10px'}}><AiFillGithub className='icon' /></a>

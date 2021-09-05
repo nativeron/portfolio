@@ -10,15 +10,17 @@
             "name":"Marketplace Gamer",
             "link":"https://www.youtube.com/watch?v=AuHNVFE97YE",
             "img":"https://i.imgur.com/B2S48OV.png",
-            "description":"Pryecto grupal. catálogo de productos, filtros y ordenamiento, búsqueda, login de usuarios, carrito, checkout de la orden, pasarella de pago, ",
-            "pag":"ver video"
+            "description":"Pryecto grupal. Desarrollo de Marketplace. Catálogo, carrito, checkout de la compra, panel vendedor, panel admin y más funcionalidades!",
+            "pag":"ver video",
+            "tech":["REACT","REDUX","NODE","EXPRESS","SEQUELIZE","POSTGRESQL","CSS","MATERIAL UI"]
         },
         {
             "name":"World's countries",
             "link":"https://www.linkedin.com/posts/natalia-veron_hola-les-comparto-mi-proyecto-individual-activity-6815732347489554432-NA79",
             "img":"https://i.imgur.com/YMWmMKH.png",
-            "description":"Consumo de api, paginación, ordenamiento, filtrado, creación de actividades en la db, formulario controlado, input de búsqueda automática.",
-            "pag":"ver video"
+            "description":"Se pueden buscar, ordenar, filtrar paises y crear actividades turisticas",
+            "pag":"ver video",
+            "tech":["REACT","REDUX","NODE","EXPRESS","SEQUELIZE","POSTGRESQL","CSS"]
         
         },
         {
@@ -26,7 +28,8 @@
             "link":"https://weatherapp-drab-omega.vercel.app/",
             "img":"https://i.imgur.com/DeLHKoR.png",
             "description":"Mini app de busqueda de ciudades de todo el mundo, mostrando el clima en tiempo real",
-            "pag":"ver página"
+            "pag":"ver página",
+            "tech":["REACT","SASS"]
         }
     ]
 }

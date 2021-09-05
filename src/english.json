@@ -10,22 +10,25 @@
         "name":"Marketplace Gamer",
         "link":"https://www.youtube.com/watch?v=AuHNVFE97YE",
         "img":"https://i.imgur.com/B2S48OV.png",
-        "description":"dsfd",
-        "pag":"video"
+        "description":"Group project. Marketplace development. Catalog, cart, purchase checkout, seller panel, admin panel and more features!",
+        "pag":"video",
+        "tech":["REACT","REDUX","NODE","EXPRESS","SEQUELIZE","POSTGRESQL","CSS","MATERIAL UI"]
     },
     {
         "name":"World's countries",
         "link":"https://www.linkedin.com/posts/natalia-veron_hola-les-comparto-mi-proyecto-individual-activity-6815732347489554432-NA79",
         "img":"https://i.imgur.com/YMWmMKH.png",
-        "description":"dfsdf",
-        "pag":"video"
+        "description":"You can search, sort, filter countries and create tourist activities",
+        "pag":"video",
+        "tech":["REACT","REDUX","NODE","EXPRESS","SEQUELIZE","POSTGRESQL","CSS"]
     },
     {
         "name":"Wheater app",
         "link":"https://weatherapp-drab-omega.vercel.app/",
         "img":"https://i.imgur.com/DeLHKoR.png",
         "description":"Search app for cities around the world, showing the weather in real time",
-        "pag":"web"
+        "pag":"web",
+        "tech":["REACT","SASS"]
     }
 ]
 }

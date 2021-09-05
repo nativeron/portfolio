@@ -98,6 +98,60 @@ body{
   justify-content: center;
   align-items: center;
 }
+.image-card{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.image-description{
+    position: relative;
+}
+.tech{
+  background-color: #43b69c;
+  color: #fffefd;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4%;
+  height: 1.8em;
+  display: flex;
+  border-radius: 12px;
+  align-items: center;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card1:hover .image {
+  opacity: 0.3;
+}
+
+.card1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #00000054;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  display: flex;
+  height: 168px;
+  align-items: center;
+  /* justify-content: space-around; */
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
 #npm{
   width: 22%;
 }
@@ -126,6 +180,9 @@ body{
   }
   #npm{
     width: 40%;
+  }
+  .description{
+    min-height: fit-content;
   }
 }
 .contact-form{
@@ -276,6 +333,7 @@ h6{
   font-family: monospace;
   margin-left: 4%;
   margin-right: 4%;
+  min-height: 120px;
 }
 .tsparticles-canvas-el{
   width: 100%;
