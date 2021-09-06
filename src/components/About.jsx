@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { PortfolioContext } from '../context/context'
 import js from '../img/javascript.png'
 import ex from '../img/expressjs-icon.png'
+import video from '../img/brain1.mp4'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 export default function About() {
     const {data} = useContext(PortfolioContext)
@@ -12,6 +13,13 @@ export default function About() {
             <h2>{data.nav[0]}</h2>
             
         </div>
+        <div style={{width:'100%', backgroundColor:'#c5c1de'}}>
+          <video width='200' loop autoPlay muted>
+            <source src={video} type="video/mp4"></source>
+            <source src={video} type="video/ogg"></source>
+        </video>   
+        </div>
+       
              <div className="skills"><h5 style={{fontFamily:'Lobster'}}>Skills</h5>
             <p>Front-end</p>
         <p > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>           
@@ -39,10 +47,10 @@ export default function About() {
         <div className='skills-container'>
         <img src={js} alt='plant' id='npm'/><div className='certificate'>
         <h5>Certificates</h5>
-        <div className='henry'><img width='150px' src='https://assets.soyhenry.com/henry-landing/assets/Henry/logo-white.png'/>
-        Full stack web developer <a target='_blank' href='https://certificates.soyhenry.com/cert?id=78ca694b-ea83-4b96-a842-06fb82e37843'><AiOutlineArrowRight/></a></div>
-        <div className='henry'><img width='150px' src='https://d33wubrfki0l68.cloudfront.net/78278bdf3a25d3e5558190b140cca9cbe86471e8/05e51/img/misuse-6.png'/>
-        Back End Development and APIs<a target='_blank' href='https://www.freecodecamp.org/certification/nativeron/back-end-development-and-apis'><AiOutlineArrowRight/></a></div>
+        <div className='henry'><img width='150px' src='https://prep.soyhenry.com/logo.png'/>
+         Full stack web developer <a target='_blank' href='https://certificates.soyhenry.com/cert?id=78ca694b-ea83-4b96-a842-06fb82e37843'><button><AiOutlineArrowRight/></button></a></div>
+        <div className='henry'><img width='150px' src='https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_large.svg'/>
+         Back End Development and APIs<a target='_blank' href='https://www.freecodecamp.org/certification/nativeron/back-end-development-and-apis'><button><AiOutlineArrowRight/></button></a></div>
 
         </div>
        

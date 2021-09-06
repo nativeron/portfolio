@@ -7,7 +7,7 @@ export default function NavB() {
   const {data, setData} = useContext(PortfolioContext)
     return (
         <div>
-              <Navbar id='nav' bg="light" expand="lg" variant="light">
+              <Navbar id='nav' bg="dark" expand="lg" variant="light">
     <Container>
     <Navbar.Brand href="#home">Natalia Verón</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

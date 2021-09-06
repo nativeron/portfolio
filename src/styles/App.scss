@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 $basecolor:#dbd4ca;
-$green:#43b69c;
+$green:#b962cf;;
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
 }
@@ -10,8 +10,9 @@ body::-webkit-scrollbar-thumb {
   background-color: $green;    /* color of the scroll thumb */
 }
 @mixin card {
-  background: #00000012;
-  box-shadow: 1px 7px 13px 1px $basecolor;
+  background: #ffffff45;
+  color: white;
+  box-shadow: 0px 0px 4px 1px $basecolor;
   &:hover{
   box-shadow: -2px 1px 10px 0px $green
 }
@@ -59,6 +60,9 @@ h2{
     transform: rotate(360deg);
   }
 }
+body{
+  background-color: black;
+}
 .App-particles__container {
   overflow: hidden;
   position: absolute;
@@ -78,10 +82,10 @@ h2{
   text-transform: inherit;
   display: block;
   font-size: 41px;
-  color: #000000;
+  color: #ffffff;
   letter-spacing: -4px;
   text-align: center;
-  padding: 47px 14px;
+  padding: 1px 1px;
 }
 #arrow{
   position: fixed;
@@ -100,7 +104,7 @@ h2{
 }
 .title-container{
   font-family: 'Bebas Neue';
-  color: dimgrey;
+  color: $green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +121,7 @@ h2{
     position: relative;
 }
 .tech{
-  background-color: #43b69c;
+  background-color: $green;
   color: #fffefd;
   width: fit-content;
   padding: 4%;
@@ -181,7 +185,7 @@ button{
 }
 }
 a{
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   :hover{
     color: $green;
@@ -193,6 +197,7 @@ a{
   padding: 9px;
   width: fit-content;
   padding: 16px;
+  @include card()
 }
 input, textarea{
   margin: 3px;
@@ -292,7 +297,7 @@ div:nth-child(2) {
   @include card();
 }
 h6{
-  color: #43b69c;
+  color: $green;
   font-family: 'Lobster', cursive;
   font-size: xx-large;
 }
@@ -318,8 +323,8 @@ h5{
     padding: 6px;
 }
 .certificate{
-  color: white;
-  background-color: #34313e;
+  color: black;
+  @include card();
   border-radius: 16px;
   padding: 7px;
   display: flex;
@@ -345,6 +350,7 @@ h5{
   }
   .card1{
     width: 80%;
+    margin-top: 5%;
   }
   .skills-container{
     flex-direction: column;

@@ -15,7 +15,7 @@ export default function ProjectCard({name,img,description,link,pag,tech}) {
             
               <h6>{name}</h6>
             <p className='description'>{description}</p>
-        <a target="_blank" style={{color:'#43b69c'}} href={link}><p>{pag}</p></a>          
+        <a target="_blank" style={{color:'#43b69c'}} href={link}><button>{pag}</button></a>          
             
         </div>
     )
