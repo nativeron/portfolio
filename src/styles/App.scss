@@ -1,18 +1,23 @@
-@import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 $basecolor:#dbd4ca;
-$green:#b962cf;;
-body::-webkit-scrollbar {
+$green:#dc92ee;
+@media (min-width:600px) {
+  body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
 }
 body::-webkit-scrollbar-thumb {
   background-color: $green;    /* color of the scroll thumb */
 }
+.creativity-container{
+  margin-top: -7%;
+}
+}
+a:hover {
+  color: #ffffff;
+}
 @mixin card {
-  background: #ffffff45;
   color: white;
-  box-shadow: 0px 0px 4px 1px $basecolor;
   &:hover{
   box-shadow: -2px 1px 10px 0px $green
 }
@@ -81,7 +86,7 @@ body{
   font-family: monospace;
   text-transform: inherit;
   display: block;
-  font-size: 41px;
+  font-size: 29px;
   color: #ffffff;
   letter-spacing: -4px;
   text-align: center;
@@ -187,17 +192,17 @@ button{
 a{
   color: #ffffff;
   text-decoration: none;
-  :hover{
-    color: $green;
-  }
 }
 .skills{
-  background: #00000008;
-  border-radius: 20px;
-  padding: 9px;
-  width: fit-content;
-  padding: 16px;
-  @include card()
+    border-radius: 20px;
+    width: fit-content;
+    padding: 16px;
+    border: solid 1px;
+    color: white;
+    &:hover{
+      box-shadow: -2px 1px 10px 0px $green
+    }
+  
 }
 input, textarea{
   margin: 3px;
@@ -293,7 +298,9 @@ div:nth-child(2) {
 }
 .card1{
   margin: 1%;
-  border-radius: 20px;
+    border-radius: 20px;
+    color: white;
+    border: solid 1px #e0e0e012;
   @include card();
 }
 h6{
@@ -303,6 +310,29 @@ h6{
 }
 .henry a{
   color:red
+}
+.brain-container{
+  width: 100%;
+  display: flex;
+  background-color: #c5c1de;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  border-radius: 20px 20px 0px 0px;
+  font-family: 'Bebas Neue';
+  font-size: 2rem;
+}
+.creativity-container{
+  display: flex;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    color: white;
+    align-items: center;
+    margin-top: -3%;
+}
+.svgbrain{
+  z-index: 0;
+  margin-top: -11%;
 }
 .description{
   font-family: monospace;
@@ -321,15 +351,20 @@ h5{
 .henry{
     width: fit-content;
     padding: 6px;
+
 }
 .certificate{
-  color: black;
-  @include card();
-  border-radius: 16px;
   padding: 7px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 20px;
+  width: fit-content;
+  border: solid 1px;
+  color: white;
+  &:hover{
+    box-shadow: -2px 1px 10px 0px $green
+  }
 }
 @media (max-width: 650px) {
   #pc-image {
@@ -355,10 +390,16 @@ h5{
   .skills-container{
     flex-direction: column;
   }
+  .brain-container{
+    flex-direction: column;
+  }
   #npm{
     width: 40%;
   }
   .description{
     min-height: fit-content;
+  }
+  .creativity-container{
+    flex-direction: column;
   }
 }

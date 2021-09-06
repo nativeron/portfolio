@@ -12,7 +12,6 @@ export default function Home() {
             
         <div className="">
           <div className="intro-container">
-            <img id="pc-image" src={pc} width='20%'alt='pc'/>
             <div style={{width:'60%'}}>
            <p id="name">{data.about[0]}</p>
           

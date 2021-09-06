@@ -1,12 +1,63 @@
-import React, { useContext } from 'react'
-import { Navbar, Nav, Container, ButtonGroup, Button} from 'react-bootstrap'
+import React, { useContext, useState } from 'react'
 import { PortfolioContext } from '../context/context'
 import spanish from '../spain.json'
 import english from '../english.json'
+import '../styles/Nav.scss'
 export default function NavB() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
   const {data, setData} = useContext(PortfolioContext)
+  const [clickedId, setClickedId] = useState('es');
+  const handleButton = (e) => {
+    setClickedId(e.target.name)
+    if (e.target.name==='en') {setData(english)}
+    else {setData(spanish)}
+  }
     return (
-        <div>
+      <>
+      <nav className="navbar" id='nav'>
+        <div className="nav-container">
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                  
+            <li className="nav-item">
+              <a href="#about"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                {data.nav[0]}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#work"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                {data.nav[1]}
+              </a>
+            </li>
+            
+            <li className="nav-item">
+              <a href="#contact"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                {data.nav[2]}
+              </a>
+            </li>
+            <li>
+              <button name='es'  className={'en' === clickedId ? "customButton":null} onClick={(e)=>handleButton(e)} >ES</button>
+              <button  name='en' className={'es' === clickedId ? "customButton":null} onClick={(e)=>handleButton(e)} >EN</button>
+            </li>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+          </div>
+        </div>
+      </nav>
+        {/* <div>
               <Navbar id='nav' bg="dark" expand="lg" variant="light">
     <Container>
     <Navbar.Brand href="#home">Natalia Verón</Navbar.Brand>
@@ -24,6 +75,10 @@ export default function NavB() {
 </ButtonGroup></Navbar.Collapse>
     </Container>
   </Navbar>
-        </div>
+        </div> */}
+    </>
+
     )
 }
+
+

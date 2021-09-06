@@ -77,7 +77,7 @@ export default function Contact() {
                    <p onClick={(e)=>handleClickError(e)} style={{textDecoration:'underline', cursor:'pointer'}} >try again</p>
                    </div>
                 }            
-            <div style={{zIndex:1}}> 
+            <div style={{zIndex:1, color:'white'}}> 
             
             <p>nataliaveronduarte@gmail.com</p>
             <div>

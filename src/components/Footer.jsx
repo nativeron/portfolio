@@ -7,10 +7,8 @@ export default function Footer() {
     <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style={{stroke:"none","fill":"#000000"}}></path>
   
   </svg>
-  <div style={{display:'flex',justifyContent:'space-around'}}>
-  <p>Natalia Verón</p>
-  <p>some illustrations were made by<a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6"> Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
-      </p></div>  
+  <div style={{display:'flex',justifyContent:'center'}}>
+  <p>Natalia Verón</p></div>  
         </div>
     )
 }
