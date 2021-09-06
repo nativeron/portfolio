@@ -47,7 +47,7 @@ export default function NavB() {
                 {data.nav[2]}
               </a>
             </li>
-            <li>
+            <li style={{padding:'2.5rem'}}>
               <button name='es'  className={'en' === clickedId ? "customButton":null} onClick={(e)=>handleButton(e)} >ES</button>
               <button  name='en' className={'es' === clickedId ? "customButton":null} onClick={(e)=>handleButton(e)} >EN</button>
             </li>

@@ -6,7 +6,6 @@ import ex from '../img/expressjs-icon.png'
 import video from '../img/brain1.mp4'
 import img from '../img/creativity.png'
 import {AiOutlineArrowRight} from 'react-icons/ai'
-import { motion } from "framer-motion"
 export default function About() {
     const {data} = useContext(PortfolioContext)
     return (

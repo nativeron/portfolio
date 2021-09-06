@@ -183,15 +183,18 @@ button{
   border-radius: 11px;
   color: white;
   font-family: monospace;
+  font-size: 1.5rem;
   margin: 5px;
   &:hover{
   background: black;
     box-shadow: $green 0px 0px 2px 2px;
+    cursor: pointer;
 }
 }
 a{
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
 }
 .skills{
     border-radius: 20px;
@@ -229,7 +232,7 @@ input, textarea{
   }
 }
 .footer{
-  background-color: $green;
+  background-color: black;
   height: 10%;
   margin-top: 4%;
 }
@@ -319,9 +322,14 @@ h6{
   justify-content: center;
   z-index: 3;
   border-radius: 20px 20px 0px 0px;
-  font-family: 'Bebas Neue';
+  font-family: fangsong;
   font-size: 2rem;
+  &:hover{
+    color: rgb(105, 11, 110);
+  }
+  transition: color 0.8s linear 0.2s;
 }
+
 .creativity-container{
   display: flex;
     font-family: 'Bebas Neue';
@@ -384,7 +392,7 @@ h5{
     align-items: center;
   }
   .card1{
-    width: 80%;
+    width: 200px;
     margin-top: 5%;
   }
   .skills-container{

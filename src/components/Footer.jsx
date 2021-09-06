@@ -3,12 +3,14 @@ import React from 'react'
 export default function Footer() {
     return (
         <div className='footer'>
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height:"128px",width:"100%"}}>
+       {/*      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height:"128px",width:"100%"}}>
     <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style={{stroke:"none","fill":"#000000"}}></path>
   
-  </svg>
-  <div style={{display:'flex',justifyContent:'center'}}>
-  <p>Natalia Verón</p></div>  
-        </div>
+  </svg> */}
+  <svg style={{    marginTop: '-14%'}} viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" 
+ >
+      <path style={{stroke:"none","fill":"#b962cfff"}} d="M 0,400 C 0,400 0,200 0,200 C 76.49487179487181,174.73846153846154 152.98974358974363,149.4769230769231 239,165 C 325.0102564102564,180.5230769230769 420.53589743589737,236.83076923076925 501,266 C 581.4641025641026,295.16923076923075 646.8666666666667,297.19999999999993 727,270 C 807.1333333333333,242.80000000000004 901.9974358974359,186.3692307692308 991,164 C 1080.002564102564,141.6307692307692 1163.1435897435897,153.3230769230769 1237,165 C 1310.8564102564103,176.6769230769231 1375.4282051282053,188.33846153846156 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" 
+  stroke-width="0" fill="#ffffff" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
+  </div>
     )
 }

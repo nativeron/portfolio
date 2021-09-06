@@ -25,12 +25,28 @@
         
         },
         {
+            "name":"Portafolio",
+            "link":"",
+            "img":"https://i.imgur.com/DeLHKoR.png",
+            "description":"Mini app de busqueda de ciudades de todo el mundo, mostrando el clima en tiempo real",
+            "pag":"ver página",
+            "tech":["REACT","SASS"]
+        },
+        {
             "name":"Wheater app",
             "link":"https://weatherapp-drab-omega.vercel.app/",
             "img":"https://i.imgur.com/DeLHKoR.png",
             "description":"Mini app de busqueda de ciudades de todo el mundo, mostrando el clima en tiempo real",
             "pag":"ver página",
             "tech":["REACT","SASS"]
+        },
+        {
+            "name":"To-Do App",
+            "link":"https://nativeron.github.io/ToDo-App/",
+            "img":"https://user-images.githubusercontent.com/80424181/116430778-87281100-a81d-11eb-834a-367873d16747.png",
+            "description":"Mini app de busqueda de ciudades de todo el mundo, mostrando el clima en tiempo real",
+            "pag":"ver página",
+            "tech":["HTML","CSS", "JAVASCRIPT"]
         }
     ]
 }
