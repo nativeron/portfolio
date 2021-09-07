@@ -13,7 +13,7 @@ export default function Home() {
         <div className="">
           <div className="intro-container">
             <div style={{width:'60%'}}>
-           <p id="name">{data.about[0]}</p>
+           <p id="name">Natalia Verón</p>
           
            <ReactTypingEffect id="name" style={{marginTop:'-5px'}} 
            text={["Full stack developer","Front end developer", "Back end developer"]}
@@ -22,7 +22,7 @@ export default function Home() {
            eraseDelay="4000"
           />
            </div>
-          </div>
+            </div>
         </div>
       </>
     )

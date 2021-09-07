@@ -2,11 +2,12 @@
     "nav":[
         "About me", "Projects", "Contact"
     ],
-    "about":["Hi! I'm Natalia Verón"],
+    "about":["Hi there! I'm Nati, a full stack developer from Argentina", "Since I discovered programming and everything that can be done with it, I decided to change my career. It is an area that allows me to develop and show my creativity and problem-solving logic. I really want to continue learning from this world.","I adapt easily and am open to learning new technologies and languages. I seek to work in a friendly environment that creates new challenges for me 😊"],
     "contact":[
         "Get in touch", "Your name", "Yout message", "Your email", "send",
         "Thanks! As soon as I see the message, we will get in touch :)","Oops, looks like something went wrong. Please, try to send it again if not write to my email nataliaveronduarte@gmail.com"
     ],
+    "tech":["I have experience working with these technologies"],
     "projects":[{
         "name":"Marketplace Gamer",
         "link":"https://www.youtube.com/watch?v=AuHNVFE97YE",
@@ -23,6 +24,14 @@
         "pag":"video",
         "tech":["REACT","REDUX","NODE","EXPRESS","SEQUELIZE","POSTGRESQL","CSS"]
     },
+        {
+            "name":"Portafolio",
+            "link":"",
+            "img":"https://i.imgur.com/DeLHKoR.png",
+            "description":"This is my personal portfolio. You can find a little about me, my projects and one how to contact me.",
+            "pag":"web",
+            "tech":["REACT","SASS"]
+        },
     {
         "name":"Wheater app",
         "link":"https://weatherapp-drab-omega.vercel.app/",
@@ -30,6 +39,14 @@
         "description":"Search app for cities around the world, showing the weather in real time",
         "pag":"web",
         "tech":["REACT","SASS"]
+    },
+    {
+        "name":"To-Do App",
+        "link":"https://nativeron.github.io/ToDo-App/",
+        "img":"https://user-images.githubusercontent.com/80424181/116430778-87281100-a81d-11eb-834a-367873d16747.png",
+        "description":"Reminder list mini app",
+        "pag":"web",
+        "tech":["HTML","CSS", "JAVASCRIPT"]
     }
 ]
 }

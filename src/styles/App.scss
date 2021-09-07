@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 $basecolor:#dbd4ca;
-$green:#ba6bee;
+$green:#c280ee;
 @media (min-width:600px) {
   body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
@@ -113,6 +113,19 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  &::before{
+    content: '<h1>';
+    color: rgb(51, 51, 51);
+    font-family: 'Lobster';
+    margin-right: 3%;
+  }
+  &::after{
+    content: '</h1>';
+    color: rgb(51, 51, 51);
+    font-family: 'Lobster';
+    margin-left: 3%;
+  }
 }
 .image-card{
   opacity: 1;
@@ -206,14 +219,15 @@ a{
 }
 .skills{
     border-radius: 20px;
-    width: fit-content;
     padding: 16px;
     border: solid 1px;
     color: white;
     &:hover{
       box-shadow: -2px 1px 10px 0px $green
     }
-  
+  p img{
+    margin-right: 1%;
+  }
 }
 input, textarea{
   margin: 3px;
@@ -238,6 +252,7 @@ input, textarea{
   img{
     margin-left: 2%;
   }
+  margin-top: 3%;
 }
 .footer{
   background-color: black;
@@ -329,12 +344,8 @@ h6{
   align-items: center;
   justify-content: center;
   z-index: 3;
-  border-radius: 20px 20px 0px 0px;
   font-family: fangsong;
-  font-size: 2rem;
-  &:hover{
-    color: rgb(105, 11, 110);
-  }
+  font-size: 1.2rem;
   transition: color 0.8s linear 0.2s;
 }
 
@@ -354,12 +365,18 @@ h6{
   font-family: monospace;
   margin-left: 4%;
   margin-right: 4%;
-  min-height: 120px;
+  min-height: 48px;
 }
 .tsparticles-canvas-el{
   width: 100%;
   height: 229px !important;
   pointer-events: initial;
+}
+.container-js{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
 }
 h5{
   font-family: Lobster;
@@ -376,7 +393,7 @@ h5{
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  width: fit-content;
+  width: 85%;
   border: solid 1px;
   color: white;
   &:hover{
@@ -403,6 +420,9 @@ h5{
     width: 80%;
     margin-top: 5%;
   }
+  #profile{
+    display: none;
+  }
   .skills-container{
     flex-direction: column;
   }
@@ -412,11 +432,17 @@ h5{
   #npm{
     width: 40%;
   }
+  .skills{
+    margin-bottom: 7%;
+  }
   .description{
     min-height: fit-content;
   }
   .creativity-container{
     flex-direction: column;
+  }
+  .container-js{
+    flex-flow: column-reverse;
   }
 }
 .res-container{

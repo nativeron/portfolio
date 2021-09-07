@@ -2,11 +2,12 @@
     "nav":[
         "Sobre mí", "Proyectos", "Contacto"
     ],
-    "about":["Hola! Soy Natalia Verón"],
+    "about":["Hola! Soy Nati. Soy de Argentina","Desde que descrubrí la programación y todo lo que se puede hacer con ella, decidí cambiar de carrera. Es un ambito que me permite desarrollar y mostrar toda mi creatividad y capacidad de resolver de problemas. Tengo muchas ganas de seguir de aprendiendo de este mundo.","Me adapto facilmente y estoy abierta a aprender nuevas tecnologías y lenguajes. Busco trabajar en un entorno amigable y que me genere nuevos desafios 😊"],
     "contact":[
         "Contactame", "Tu nombre", "Tu mensaje", "Tu mail", "enviar",
         "Gracias! Tu mensaje ya llegó a mi casilla de mail. Apenas lo vea, nos ponemos en contacto :)","Ups, parece que algo salió mal. Por favor, intenta mandarlo de nuevo sino escribime a mi mail nataliaveronduarte@gmail.com"
     ],
+    "tech":["tengo experiencia trabajando con estas tecnologÍas"],
     "projects":[{
             "name":"Marketplace Gamer",
             "link":"https://www.youtube.com/watch?v=AuHNVFE97YE",
@@ -28,7 +29,7 @@
             "name":"Portafolio",
             "link":"",
             "img":"https://i.imgur.com/DeLHKoR.png",
-            "description":"Mini app de busqueda de ciudades de todo el mundo, mostrando el clima en tiempo real",
+            "description":"Este es mi portafolio personal. Podes encontrar un poco sobre mí, mis proyectos y una cómo contactarme.",
             "pag":"ver página",
             "tech":["REACT","SASS"]
         },
@@ -44,7 +45,7 @@
             "name":"To-Do App",
             "link":"https://nativeron.github.io/ToDo-App/",
             "img":"https://user-images.githubusercontent.com/80424181/116430778-87281100-a81d-11eb-834a-367873d16747.png",
-            "description":"Mini app de busqueda de ciudades de todo el mundo, mostrando el clima en tiempo real",
+            "description":"Mini app de lista de recordatorios",
             "pag":"ver página",
             "tech":["HTML","CSS", "JAVASCRIPT"]
         }
