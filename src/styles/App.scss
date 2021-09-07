@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 $basecolor:#dbd4ca;
-$green:#dc92ee;
+$green:#ba6bee;
 @media (min-width:600px) {
   body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
@@ -109,7 +109,7 @@ body{
 }
 .title-container{
   font-family: 'Bebas Neue';
-  color: $green;
+  color: #c5c1de;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,12 +128,14 @@ body{
 .tech{
   background-color: $green;
   color: #fffefd;
+  width: -moz-fit-content;
   width: fit-content;
-  padding: 4%;
+  padding: 2%;
   height: 1.8em;
   display: flex;
   border-radius: 12px;
-  align-items: center;
+  /* align-items: center; */
+  margin-left: 1%;
 }
 .middle {
   transition: .5s ease;
@@ -156,13 +158,14 @@ body{
 .text {
   background-color: #00000054;
   color: white;
+  margin: 0%;
   font-size: 13px;
-  padding: 16px 32px;
+  /* padding: 1%; */
   display: flex;
   height: 168px;
   align-items: center;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #npm{
   width: 22%;
@@ -181,7 +184,6 @@ button{
   background-color:$green;
   border: none;
   border-radius: 11px;
-  color: white;
   font-family: monospace;
   font-size: 1.5rem;
   margin: 5px;
@@ -189,7 +191,13 @@ button{
   background: black;
     box-shadow: $green 0px 0px 2px 2px;
     cursor: pointer;
+    color: white;
 }
+}
+.buttonPC{
+  background-color: black !important;
+  color: gray;
+  cursor: default !important;
 }
 a{
   color: #ffffff;
@@ -359,6 +367,7 @@ h5{
 .henry{
     width: fit-content;
     padding: 6px;
+    display: flex;
 
 }
 .certificate{
@@ -388,11 +397,10 @@ h5{
       width: 7rem;
   }
   .card-container{
-    flex-direction: column;
-    align-items: center;
+    display: none !important
   }
   .card1{
-    width: 200px;
+    width: 80%;
     margin-top: 5%;
   }
   .skills-container{
@@ -409,5 +417,23 @@ h5{
   }
   .creativity-container{
     flex-direction: column;
+  }
+}
+.res-container{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.customButton{
+  color: white;
+}
+@media (min-width:650px) {
+  .res-container{
+    display: none;
+    
+  }
+  .card1{
+    width: 40%;
   }
 }

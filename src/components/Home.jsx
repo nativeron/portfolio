@@ -18,8 +18,8 @@ export default function Home() {
            <ReactTypingEffect id="name" style={{marginTop:'-5px'}} 
            text={["Full stack developer","Front end developer", "Back end developer"]}
            className="typical"
-           speed="100"
-           eraseDelay="1000"
+           speed="50"
+           eraseDelay="4000"
           />
            </div>
           </div>
