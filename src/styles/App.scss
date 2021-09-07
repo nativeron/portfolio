@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
 $basecolor:#dbd4ca;
 $green:#c280ee;
 @media (min-width:600px) {
@@ -344,7 +345,7 @@ h6{
   align-items: center;
   justify-content: center;
   z-index: 3;
-  font-family: fangsong;
+  font-family: 'Glory', sans-serif;
   font-size: 1.2rem;
   transition: color 0.8s linear 0.2s;
 }

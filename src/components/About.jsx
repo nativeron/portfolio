@@ -5,6 +5,7 @@ import js from '../img/javascript.png'
 import ex from '../img/expressjs-icon.png'
 import video from '../img/brain1.mp4'
 import img from '../img/creativity.png'
+import brain from '../img/brain1.gif'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 export default function About() {
     const {data} = useContext(PortfolioContext)
@@ -15,10 +16,11 @@ export default function About() {
             
         </div>
         <div className='brain-container'>
-          <video width='250' loop autoPlay muted>
+            <img width='250px' src={brain} alt='brain'/>
+         {/*  <video width='250' loop autoPlay muted>
             <source src={video} type="video/mp4"></source>
             <source src={video} type="video/ogg"></source>
-        </video> 
+        </video>  */}
          <div style={{    marginLeft:'5%',marginRight:'5%'}}>
         <p  style={{    paddingRight:'5%', paddingLeft:'5%'}}>{data.about[0]}<img width='25px' src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/56/flag-for-argentina_1f1e6-1f1f7.png"/>
         </p><p>{data.about[1]}</p>
