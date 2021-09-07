@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { PortfolioContext } from '../context/context'
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from 'react-icons/ai';
 import axios from 'axios';
+import { Link} from "react-scroll";
 import Particles from 'react-particles-js';
 import particlesConfig from '../particlesjs-config.json'
 export default function Contact() {
@@ -87,7 +88,7 @@ export default function Contact() {
             </div>
             </div>
             </div>
-            <button id="arrow"><a href='#nav'><AiOutlineArrowUp/></a> </button>
+            <button id="arrow"><Link  to="nav" spy={true} smooth={true}><AiOutlineArrowUp/></Link> </button>
         </div>
     )
 }

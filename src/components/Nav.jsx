@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { PortfolioContext } from '../context/context'
 import spanish from '../spain.json'
 import english from '../english.json'
+import { Link} from "react-scroll";
 import '../styles/Nav.scss'
 export default function NavB() {
   const [click, setClick] = useState(false);
@@ -20,32 +21,26 @@ export default function NavB() {
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                   
             <li className="nav-item">
-              <a href="#about"
+            <Link activeClass="active" to="about" className='nav-links' spy={true} smooth={true}>
+             {/*  <a href="#about"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
-              >
+              > */}
                 {data.nav[0]}
-              </a>
+              {/* </a> */}
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#work"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
+            <Link  to="work" className='nav-links' spy={true} smooth={true}>
                 {data.nav[1]}
-              </a>
+              </Link>
             </li>
             
             <li className="nav-item">
-              <a href="#contact"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
+            <Link  to="contact" className='nav-links' spy={true} smooth={true}>
                 {data.nav[2]}
-              </a>
+              </Link>
             </li>
             <li style={{padding:'2.5rem'}}>
               <button name='es'  className={'en' === clickedId ? "customButton":null} onClick={(e)=>handleButton(e)} >ES</button>
