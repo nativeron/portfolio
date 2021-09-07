@@ -15,7 +15,7 @@ export default function Home() {
             <div style={{width:'60%'}}>
            <p id="name">Natalia Verón</p>
           
-           <ReactTypingEffect id="name" style={{marginTop:'-5px'}} 
+           <ReactTypingEffect id="name" style={{marginTop:'-5px', fontSize:'1.5rem'}} 
            text={["Full stack developer","Front end developer", "Back end developer"]}
            className="typical"
            speed="50"
