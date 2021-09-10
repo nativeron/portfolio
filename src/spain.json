@@ -2,7 +2,7 @@
     "nav":[
         "Sobre mí", "Proyectos", "Contacto"
     ],
-    "about":["Hola! Soy Nati. Soy de Argentina","Desde que descrubrí la programación y todo lo que se puede hacer con ella, decidí cambiar de carrera. Es un ámbito que me apasiona y a su vez me permite desarrollar toda mi creatividad y capacidad de resolver problemas. Tengo muchas ganas de seguir de aprendiendo de este mundo.","Me adapto fácilmente y estoy abierta a aprender nuevas tecnologías y lenguajes. Busco trabajar en un entorno amigable y que me genere nuevos desafíos 😊"],
+    "about":["Hola! Soy Nati. Soy de Argentina","Desde que descrubrí la programación y todo lo que se puede hacer con ella, decidí cambiar de carrera. Es un ámbito que me apasiona y a su vez me permite desarrollar toda mi creatividad y capacidad de resolver problemas. Tengo muchas ganas de seguir aprendiendo de este mundo.","Me adapto fácilmente y estoy abierta a aprender nuevas tecnologías y lenguajes. Busco trabajar en un entorno amigable y que me genere nuevos desafíos 😊"],
     "contact":[
         "Contactame", "Tu nombre", "Tu mensaje", "Tu mail", "enviar",
         "Gracias! Tu mensaje ya llegó a mi casilla de mail. Apenas lo vea, nos ponemos en contacto :)","Ups, parece que algo salió mal. Por favor, intenta mandarlo de nuevo sino escribime a mi mail nataliaveronduarte@gmail.com"
@@ -12,7 +12,7 @@
             "name":"Marketplace Gamer",
             "link":"https://www.youtube.com/watch?v=AuHNVFE97YE",
             "img":"https://i.imgur.com/B2S48OV.png",
-            "description":"Pryecto grupal. Desarrollo de Marketplace. Catálogo, carrito, checkout de la compra, panel para usuario vendedor, panel para administradores y más funcionalidades!",
+            "description":"Proyecto grupal. Desarrollo de Marketplace. Catálogo, carrito, checkout de la compra, panel para usuario vendedor, panel para administradores y más funcionalidades!",
             "pag":"ver video",
             "tech":["REACT","REDUX","NODE","EXPRESS","SEQUELIZE","POSTGRESQL","CSS","MATERIAL UI"]
         },
