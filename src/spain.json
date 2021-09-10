@@ -2,7 +2,7 @@
     "nav":[
         "Sobre mí", "Proyectos", "Contacto"
     ],
-    "about":["Hola! Soy Nati. Soy de Argentina","Desde que descrubrí la programación y todo lo que se puede hacer con ella, decidí cambiar de carrera. Es un ambito que me apasiona y a su vez me permite desarrollar toda mi creatividad y capacidad de resolver problemas. Tengo muchas ganas de seguir de aprendiendo de este mundo.","Me adapto facilmente y estoy abierta a aprender nuevas tecnologías y lenguajes. Busco trabajar en un entorno amigable y que me genere nuevos desafios 😊"],
+    "about":["Hola! Soy Nati. Soy de Argentina","Desde que descrubrí la programación y todo lo que se puede hacer con ella, decidí cambiar de carrera. Es un ámbito que me apasiona y a su vez me permite desarrollar toda mi creatividad y capacidad de resolver problemas. Tengo muchas ganas de seguir de aprendiendo de este mundo.","Me adapto fácilmente y estoy abierta a aprender nuevas tecnologías y lenguajes. Busco trabajar en un entorno amigable y que me genere nuevos desafíos 😊"],
     "contact":[
         "Contactame", "Tu nombre", "Tu mensaje", "Tu mail", "enviar",
         "Gracias! Tu mensaje ya llegó a mi casilla de mail. Apenas lo vea, nos ponemos en contacto :)","Ups, parece que algo salió mal. Por favor, intenta mandarlo de nuevo sino escribime a mi mail nataliaveronduarte@gmail.com"
@@ -12,7 +12,7 @@
             "name":"Marketplace Gamer",
             "link":"https://www.youtube.com/watch?v=AuHNVFE97YE",
             "img":"https://i.imgur.com/B2S48OV.png",
-            "description":"Pryecto grupal. Desarrollo de Marketplace. Catálogo, carrito, checkout de la compra, panel vendedor, panel admin y más funcionalidades!",
+            "description":"Pryecto grupal. Desarrollo de Marketplace. Catálogo, carrito, checkout de la compra, panel para usuario vendedor, panel para administradores y más funcionalidades!",
             "pag":"ver video",
             "tech":["REACT","REDUX","NODE","EXPRESS","SEQUELIZE","POSTGRESQL","CSS","MATERIAL UI"]
         },
@@ -20,7 +20,7 @@
             "name":"World's countries",
             "link":"https://www.linkedin.com/posts/natalia-veron_hola-les-comparto-mi-proyecto-individual-activity-6815732347489554432-NA79",
             "img":"https://i.imgur.com/YMWmMKH.png",
-            "description":"Se pueden buscar, ordenar, filtrar paises y crear actividades turisticas",
+            "description":"Se pueden buscar, ordenar, filtrar países y crear actividades turísticas",
             "pag":"ver video",
             "tech":["REACT","REDUX","NODE","EXPRESS","SEQUELIZE","POSTGRESQL","CSS"]
         
@@ -29,7 +29,7 @@
             "name":"Portafolio",
             "link":"",
             "img":"https://i.imgur.com/lHXQzWY.png",
-            "description":"Este es mi portafolio personal. Podes encontrar un poco sobre mí, mis proyectos y una cómo contactarme.",
+            "description":"Este es mi portafolio personal. Podes encontrar un poco sobre mí, mis proyectos y cómo contactarme.",
             "pag":"ver página",
             "tech":["REACT","SASS"]
         },
@@ -37,7 +37,7 @@
             "name":"Wheater app",
             "link":"https://weatherapp-drab-omega.vercel.app/",
             "img":"https://i.imgur.com/DeLHKoR.png",
-            "description":"Mini app de busqueda de ciudades de todo el mundo, mostrando el clima en tiempo real",
+            "description":"Mini app de búsqueda de ciudades de todo el mundo, mostrando el clima en tiempo real",
             "pag":"ver página",
             "tech":["REACT","SASS"]
         },

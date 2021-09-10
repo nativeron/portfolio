@@ -4,7 +4,6 @@ import particlesConfig from "../particlesjs-config.json";
 import ReactTypingEffect from 'react-typing-effect';
 import pc from '../img/pc.png'
 import { PortfolioContext } from "../context/context";
-
 export default function Home() {
   const {data} = useContext(PortfolioContext)
     return (
@@ -24,6 +23,7 @@ export default function Home() {
            </div>
             </div>
         </div>
+        
       </>
     )
 }
