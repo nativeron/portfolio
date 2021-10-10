@@ -55,12 +55,12 @@ export default function Contact() {
                     !success && !error && !loading &&
                 <form className='gform contact-form' data-email='nataliaveronduarte@gmail.com'
             onSubmit={handleSubmit}>
-                <label>{data.contact[1]}</label>
-                <input onChange={handleChange} type="text" name='name' required/>
-                <label>{data.contact[2]}</label>
-                <textarea value={message.message} onChange={handleChange} style={{height:'7rem'}} type="text" name='message' required/>
-                <label>{data.contact[3]}</label>
-                <input value={message.email} onChange={handleChange} type="text" name='email' required/>
+                <label htmlFor="name">{data.contact[1]}</label>
+                <input onChange={handleChange} type="text" id="name" name='name' required/>
+                <label htmlFor="message">{data.contact[2]}</label>
+                <textarea value={message.message} id="message" onChange={handleChange} style={{height:'7rem'}} type="text" name='message' required/>
+                <label htmlFor="email">{data.contact[3]}</label>
+                <input value={message.email} onChange={handleChange} id="email" type="text" name='email' required/>
                 <button type='submit'>{data.contact[4]}</button>
             </form>
                 }
@@ -82,13 +82,13 @@ export default function Contact() {
             
             <p>nataliaveronduarte@gmail.com</p>
             <div>
-                <a href="https://www.github.com/nativeron" target="_blank" style={{marginRight:'10px'}}><AiFillGithub className='icon' /></a>
-                <a href="https://linkedin.com/in/natalia-veron" target="_blank"><AiFillLinkedin className='icon' /></a>
+                <a href="https://www.github.com/nativeron" rel="noreferrer" target="_blank" style={{marginRight:'10px'}}><AiFillGithub aria-label="github" className='icon' /></a>
+                <a href="https://linkedin.com/in/natalia-veron" rel="noreferrer" target="_blank"><AiFillLinkedin aria-label="linkedin" className='icon' /></a>
                 
             </div>
             </div>
             </div>
-            <button id="arrow"><Link  to="nav" spy={true} smooth={true}><AiOutlineArrowUp/></Link> </button>
+            <button aria-label="top" id="arrow"><Link  to="nav" spy={true} smooth={true}><AiOutlineArrowUp/></Link> </button>
         </div>
     )
 }

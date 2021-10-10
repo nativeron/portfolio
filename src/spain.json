@@ -27,8 +27,8 @@
         },
         {
             "name":"Portafolio",
-            "link":"",
-            "img":"https://i.imgur.com/lHXQzWY.png",
+            "link":"https://portfolio-nativeron.vercel.app/",
+            "img":"https://i.imgur.com/cvFY23T.png",
             "description":"Este es mi portafolio personal. Podes encontrar un poco sobre mí, mis proyectos y cómo contactarme.",
             "pag":"ver página",
             "tech":["REACT","SASS"]

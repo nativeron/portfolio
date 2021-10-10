@@ -16,27 +16,25 @@ export default function Projects() {
             <h2>{data.nav[1]}</h2></div>
             <div className='card-container' style={{display:'flex','justifyContent':' space-between', minWidth:'100%', alignItems: 'center'}}>
                 {
-                numpag===1 ? <button className='buttonPC' disabled={true} ><BiLeftArrow/></button>
-                : <button onClick={() => setNumpag(numpag - 1)} ><BiLeftArrow/></button>
+                numpag===1 ? <button className='buttonPC' aria-label='disabled button' disabled={true} ><BiLeftArrow/></button>
+                : <button aria-label='to left' onClick={() => setNumpag(numpag - 1)} ><BiLeftArrow/></button>
                 } 
   {
                 projectsView.map((x)=>{
-                    console.log(x.img)
                     return (
-                    <ProjectCard name={x.name} description={x.description} img={x.img} link={x.link} pag={x.pag} tech={x.tech}/>)
+                    <ProjectCard key={x.name} name={x.name} description={x.description} img={x.img} link={x.link} pag={x.pag} tech={x.tech}/>)
             })
         }   
             {
-                numpag===3 ? <button className='buttonPC' disabled={true}><BiRightArrow /></button> :
-                <button onClick={() => setNumpag(numpag + 1)}><BiRightArrow /></button>
+                numpag===3 ? <button aria-label='disabled button' className='buttonPC' disabled={true}><BiRightArrow /></button> :
+                <button aria-label='next' onClick={() => setNumpag(numpag + 1)}><BiRightArrow /></button>
             }
             </div>
             <div className='res-container'>
             {
                 data.projects.map((x)=>{
-                    console.log(x.img)
                     return (
-                    <ProjectCard name={x.name} description={x.description} img={x.img} link={x.link} pag={x.pag} tech={x.tech}/>)
+                    <ProjectCard key={x.name} name={x.name} description={x.description} img={x.img} link={x.link} pag={x.pag} tech={x.tech}/>)
             })
         }   
           

@@ -3,11 +3,11 @@ export default function ProjectCard({name,img,description,link,pag,tech}) {
     return (
         <div className='card1'>
             <div className='image-description'>
-            <img className='image-card' style={{'borderRadius':'20px 20px 0px 0px'}} src={img}/>
+            <img className='image-card' style={{'borderRadius':'20px 20px 0px 0px'}} src={img} alt={name}/>
             <div className='middle'><div className='text'>
                 { tech.map((x)=>{
                     return(
-                        <p className='tech'>{x}</p>
+                        <p className='tech' key={x}>{x}</p>
                     )
                 }) }
                 </div></div>
@@ -15,7 +15,7 @@ export default function ProjectCard({name,img,description,link,pag,tech}) {
             
               <h6>{name}</h6>
             <p className='description'>{description}</p>
-        <a target="_blank" style={{color:'#43b69c'}} href={link}><button>{pag}</button></a>          
+        <a href={link} target="_blank" rel="noreferrer" style={{color:'#43b69c'}} ><button>{pag}</button></a>          
             
         </div>
     )

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './styles/App.scss'
 import { PortfolioProvider } from './context/context';
 import Home from './components/Home';
@@ -8,7 +8,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 function App() {
-  const [data, setData] = useState({});
   return (
     <div className="App">
     <PortfolioProvider>

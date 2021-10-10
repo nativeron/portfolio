@@ -94,7 +94,7 @@ body{
 }
 }
 
-#name{
+.name{
   font-family: monospace;
   text-transform: inherit;
   display: block;
@@ -128,13 +128,13 @@ body{
   width: 100%;
   &::before{
     content: '<h1>';
-    color: rgb(51, 51, 51);
+    color: #ffffffb3;
     font-family: 'Lobster';
     margin-right: 3%;
   }
   &::after{
     content: '</h1>';
-    color: rgb(51, 51, 51);
+    color: #ffffffb3;
     font-family: 'Lobster';
     margin-left: 3%;
   }
