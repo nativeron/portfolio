@@ -11,7 +11,7 @@
     "projects":[{
         "name":"Marketplace Gamer",
         "link":"https://www.youtube.com/watch?v=AuHNVFE97YE",
-        "img":"https://i.imgur.com/B2S48OV.png",
+        "img":"https://i.imgur.com/WjGsEvm.png",
         "description":"Group project. Marketplace development. Catalog, cart, purchase checkout, seller panel, admin panel and more features!",
         "pag":"video",
         "tech":["REACT","REDUX","NODE","EXPRESS","SEQUELIZE","POSTGRESQL","CSS","MATERIAL UI"]
